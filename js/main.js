@@ -85,6 +85,7 @@ function boardrest()
         squares[i].innerHTML = '';
     }
     player = 'X';
+    displayturn();
 }
 
 // Function to board reset and clear the turn
