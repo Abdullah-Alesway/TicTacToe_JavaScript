@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* 
+{
+    font-family: 'Dancing Script', cursive;
+}
+
+.title
+{
+    font-size: 34px;
+}
+
+.cell 
+{
+    width: 85px;
+    height: 85px;
+    font-size: 50px;
+    cursor: pointer;
+}
+.reset
+{
+    width: 120px;
+}
+
+.winner {
+    font-size: 30px;
+}
+
+@media (min-width: 992px)
+{
+    .title
+    {
+        font-size: 40px;
+    }
+    .cell 
+    {
+        width: 150px;
+        height: 150px;
+        font-size: 100px;
+    }
+    .reset
+    {
+        width: 170px;
+    }
+    .winner {
+        font-size: 38px;
+    }
+    
+}
+
