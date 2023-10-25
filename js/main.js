@@ -128,5 +128,6 @@ function displaydraw()
     if(isDraw() === true)
     {
         winnerplayer.innerHTML = 'Draw!';
+        boardrest();
     }
 }
