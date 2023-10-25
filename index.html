@@ -10,6 +10,26 @@
     <script defer src="js/main.js"></script>
 </head>
 <body>
+    <div class="container">
+        <div class="modal" id="scorescreen">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Contact</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="winner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#scorescreen">
+                Launch demo modal
+            </button>
+        </div>
+    </div>
     <div class="mt-5 container text-center">
         <div class="row mb-2">
             <h1 class="title text-danger fw-bold">Tic Tac Toe</h1>
@@ -33,7 +53,7 @@
             <button class="mt-2 fs-3 reset p-2 btn btn-danger col-2">Resat</button>
         </div>
         <div class="row">
-            <div class="winner turn fw-medium"></div>
+            <div class="turn fw-medium"></div>
         </div>
     </div>  
 </body>

@@ -22,7 +22,7 @@
     width: 120px;
 }
 
-.winner {
+.turn {
     font-size: 28px;
 }
 
@@ -42,7 +42,7 @@
     {
         width: 140px;
     }
-    .winner {
+    .turn {
         font-size: 30px;
     }   
 }
@@ -63,9 +63,8 @@
     {
         width: 170px;
     }
-    .winner {
+    .trun {
         font-size: 38px;
     }
     
 }
-

@@ -4,6 +4,8 @@ var player = 'X';
 var resetBtn = document.getElementsByClassName('reset')[0];
 var winnerplayer = document.getElementsByClassName('winner')[0];
 var turn = document.getElementsByClassName('turn')[0];
+var scorescreen = document.getElementById('scorescreen');
+var scoremodal = new bootstrap.Modal(scorescreen);
 
 // Function to start the game
 for(i = 0; i < squares.length; i++) 
@@ -101,6 +103,7 @@ resetBtn.onclick = function()
 // Function to display the winner
 function displaywinder(winner)
 {
+    scoremodal.show();
     winnerplayer.innerHTML = 'Player ' + winner + ' wins!';
 }
 
@@ -127,6 +130,7 @@ function displaydraw()
 {
     if(isDraw() === true)
     {
+        scoremodal.show();
         winnerplayer.innerHTML = 'Draw!';
         boardrest();
     }
