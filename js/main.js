@@ -36,60 +36,66 @@ function winner()
     if(squares[0].innerHTML !== '' && squares[0].innerHTML === squares[1].innerHTML && squares[0].innerHTML === squares[2].innerHTML) 
     {
         displaywinder(squares[0].innerHTML);
-        reset();
+        boardrest();
     } 
     else if(squares[3].innerHTML !== '' && squares[3].innerHTML === squares[4].innerHTML && squares[3].innerHTML === squares[5].innerHTML) 
     {
         displaywinder(squares[3].innerHTML);
-        reset();
+        boardrest();
     } 
     else if(squares[6].innerHTML !== '' && squares[6].innerHTML === squares[7].innerHTML && squares[6].innerHTML === squares[8].innerHTML) 
     {
         displaywinder(squares[6].innerHTML)
-        reset();
+        boardrest();
     } 
     else if(squares[0].innerHTML !== '' && squares[0].innerHTML === squares[3].innerHTML && squares[0].innerHTML === squares[6].innerHTML) 
     {
         displaywinder(squares[0].innerHTML);
-        reset();
+        boardrest();
     } 
     else if(squares[1].innerHTML !== '' && squares[1].innerHTML === squares[4].innerHTML && squares[1].innerHTML === squares[7].innerHTML) 
     {
         displaywinder(squares[1].innerHTML);
-        reset();
+        boardrest();
     } 
     else if(squares[2].innerHTML !== '' && squares[2].innerHTML === squares[5].innerHTML && squares[2].innerHTML === squares[8].innerHTML) 
     {
         displaywinder(squares[2].innerHTML);
-        reset();
+        boardrest();
     } 
     else if(squares[0].innerHTML !== '' && squares[0].innerHTML === squares[4].innerHTML && squares[0].innerHTML === squares[8].innerHTML) 
     {
         displaywinder(squares[0].innerHTML);
-        reset();
+        boardrest();
     } 
     else if(squares[2].innerHTML !== '' && squares[2].innerHTML === squares[4].innerHTML && squares[2].innerHTML === squares[6].innerHTML) 
     {
         displaywinder(squares[2].innerHTML);
-        reset();
+        boardrest();
     }
 }
 
-// Function to reset the game
-function reset() 
+// Function to board reset
+function boardrest() 
 {
     for(i = 0; i < squares.length; i++) 
     {
         squares[i].innerHTML = '';
     }
     player = 'X';
+}
+
+// Function to board reset and clear the turn
+function boardrestturn() 
+{
+    boardrest();
     turn.innerHTML = '';
 }
 
 // Button to reset the game
 resetBtn.onclick = function() 
 {
-    reset();
+    boardrestturn();
 }
 
 // Function to display the winner

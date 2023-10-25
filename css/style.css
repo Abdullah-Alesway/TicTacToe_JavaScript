@@ -23,14 +23,35 @@
 }
 
 .winner {
-    font-size: 30px;
+    font-size: 28px;
+}
+
+@media (min-width: 720px) 
+{
+    .title
+    {
+        font-size: 38px;
+    }
+    .cell 
+    {
+        width: 120px;
+        height: 120px;
+        font-size: 60px;
+    }
+    .reset
+    {
+        width: 140px;
+    }
+    .winner {
+        font-size: 30px;
+    }   
 }
 
 @media (min-width: 992px)
 {
     .title
     {
-        font-size: 40px;
+        font-size: 44px;
     }
     .cell 
     {
